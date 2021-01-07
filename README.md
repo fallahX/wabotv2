@@ -1,4 +1,4 @@
-# wabot-aq
+
 Simple WhatsApp Bot
 
 ### FOR TERMUX USER
@@ -8,8 +8,8 @@ Simple WhatsApp Bot
 > pkg install nodejs -y
 > pkg install ffmpeg -y
 > pkg install imagemagick -y
-> git clone https://github.com/Nurutomo/wabot-aq
-> cd wabot-aq
+> git clone https://github.com/fallahX/wabot
+> cd wabot
 > npm install
 ```
 ###### Run
@@ -21,11 +21,12 @@ Simple WhatsApp Bot
 
 ### FOR WINDOWS/VPS/RDP USER
 ```bash
-> git clone https://github.com/Nurutomo/wabot-aq
-> cd wabot-aq
+> git clone https://github.com/fallahX/wabot
+> cd wabot
 > npm install
 ```
 ###### Run
 ```bash
 > node index.js
 ```
+##THANKS TO NURTOMO
