@@ -8,8 +8,8 @@ Simple WhatsApp Bot
 > pkg install nodejs -y
 > pkg install ffmpeg -y
 > pkg install imagemagick -y
-> git clone https://github.com/fallahX/wabot
-> cd wabot
+> git clone https://github.com/fallahX/wabotv1
+> cd wabotv1
 > npm install
 ```
 ###### Run
@@ -21,8 +21,8 @@ Simple WhatsApp Bot
 
 ### FOR WINDOWS/VPS/RDP USER
 ```bash
-> git clone https://github.com/fallahX/wabot
-> cd wabot
+> git clone https://github.com/fallahX/wabotv1
+> cd wabotv1
 > npm install
 ```
 ###### Run
