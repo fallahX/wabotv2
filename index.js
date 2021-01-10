@@ -7,6 +7,7 @@ let chalk = require('chalk')
 let fs = require('fs')
 let path = require('path')
 let util = require('util')
+let JSON.parse(fs.readFileSync('./src/welkom.json'))
 let WAConnection = simple.WAConnection(_WAConnection)
 global.conn = new WAConnection()
 global.timestamp = {
@@ -156,6 +157,22 @@ for (let filename in global.plugins) {
     delete global.plugins[filename]
   }
 }
+let 'welcome':
+					if (!isGroup) return reply(mess.only.group)
+					if (!isGroupAdmins) return reply(mess.only.admin)
+					if (args.length < 1) return reply('Hmmmm')
+					if (Number(args[0]) === 1) {
+						if (isWelkom) return reply('Udah aktif um')
+						welkom.push(from)
+						fs.writeFileSync('./src/welkom.json', JSON.stringify(welkom))
+						reply('Sukses mengaktifkan fitur welcome di group ini ✔️')
+					} else if (Number(args[0]) === 0) {
+						welkom.splice(from, 1)
+						fs.writeFileSync('./src/welkom.json', JSON.stringify(welkom))
+						reply('Sukses menonaktifkan fitur welcome di group ini ✔️')
+					} else {
+						reply('1 untuk mengaktifkan, 0 untuk menonaktifkan')
+					}
 console.log(global.plugins)
 fs.watch(path.join(__dirname, 'plugins'), (event, filename) => {
   if (pluginFilter(filename)) {
